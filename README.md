@@ -32,7 +32,7 @@ Shanna Morris: https://github.com/ShannaRenee
 
 Daniel Pacheco: https://github.com/Daniel-0117 
 
-Kevin Verduzco: 
+Kevin Verduzco: https://github.com/kevinverduzco27
 
 Trenton Sallee: https://github.com/trentonsallee 
 

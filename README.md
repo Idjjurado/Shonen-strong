@@ -1,4 +1,4 @@
-# Project-2-repo
+# Shonen-strong
 ![HOLD PLEASE](./public/imgs/mossitcrowd.gif "MOSS IT CROWD!")
 
 link: 

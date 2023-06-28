@@ -1,0 +1,8 @@
+.logo-login {
+    width: 30%;
+}
+
+.login-bg {
+    background-image: url(../imgs/login-bg.jpg);
+    background-size: cover;
+}

@@ -1,0 +1,13 @@
+.logo-login {
+    width: 30%;
+}
+
+.login-bg {
+    background-image: url(../imgs/login-bg.jpg);
+    background-size: cover;
+}
+
+.bg-all-warriors {
+    background-image: url(../imgs/allwarriors.jpg);
+    background-size: cover;
+}

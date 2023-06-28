@@ -10,7 +10,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-  
+
   process.exit(0);
 };
 

@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS examplename_db;
-CREATE DATABASE examplename_db;
+DROP DATABASE IF EXISTS shonenStrong_db;
+CREATE DATABASE shonenStrong_db;

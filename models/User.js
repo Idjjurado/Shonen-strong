@@ -16,9 +16,17 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    firstname: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    lastname:{
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    nickname:{
+      type: DataTypes.STRING,
+      allowNull: true
     },
     email: {
       type: DataTypes.STRING,
@@ -33,6 +41,20 @@ User.init(
       allowNull: false,
       validate: {
         len: [8],
+      },
+    },
+    Recommended: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'rec_workout',
+        key: 'id',
+      },
+    },
+    CurrentWorkout_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'goal_tracker',
+        key: 'id',
       },
     },
   },

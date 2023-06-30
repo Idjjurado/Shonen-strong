@@ -1,27 +1,6 @@
 const router = require('express').Router();
-// import our db connection for the SQL literals
 const sequelize = require('../../config/connection');
-const { Post, User, Comment } = require('../../models');
-
-/***** CREATE *****/
-// Route to create a new post
-// POST method with endpoint '/api/posts/'
-// test with: {"title": "Test title for a new post", "text": "This is the text for the new post", "userId": 12}
-// TODO: Only authenticated users can create a post
-router.post('/', async (req, res) => {
-  try {
-    const newPost = await Post.create({
-      title: req.body.title,
-      text: req.body.text,
-      // TODO: userId will come from req.session once we have set up our sessions
-      userId: req.body.userId,
-    });
-    res.status(201).json(newPost);
-  } catch (error) {
-    console.log(error);
-    res.status(500).json(error); // 500 - Internal Server Error
-  }
-});
+const { Animechars, Workout, Rec_workout, Exercises, Goal_tracker } = require('../../models');
 
 /***** READ - optional *****/
 // Route to retrieve all posts

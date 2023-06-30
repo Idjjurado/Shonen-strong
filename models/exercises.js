@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class exercise extends Model{}
+class Exercise extends Model{}
 
-exercise.init(
+Exercise.init(
   {
     id: {
       type: DataTypes.TEXT,
@@ -32,4 +32,4 @@ exercise.init(
   }
 );
 
-modeule.exports = exercise;
+module.exports = Exercise;

@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class goalTracker extends Model{}
+class GoalTracker extends Model{}
 
-goalTracker.init(
+GoalTracker.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -48,4 +48,4 @@ goalTracker.init(
   }
 );
 
-module.exports = goalTracker;
+module.exports = GoalTracker;

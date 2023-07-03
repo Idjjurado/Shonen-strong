@@ -7,7 +7,7 @@ const { Animechars, Workout, Rec_workout, Exercises, Goal_tracker } = require('.
 // GET method with endpoint '/api/posts/'
 router.get('/', async (req, res) => {
   try {
-    const posts = await Post.findAll({
+    const posts = await Animechars.findAll({
       include: [{ model: User, attributes: ['username'] }],
       attributes: {
         include: [

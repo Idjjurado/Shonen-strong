@@ -1,7 +1,6 @@
 const router = require('express').Router();
-// import our db connection for the SQL literals
 const sequelize = require('../../config/connection');
-const { User, Post, Comment } = require('../../models');
+const { User } = require('../../models');
 
 /***** CREATE *****/
 // Route to sign up a new user

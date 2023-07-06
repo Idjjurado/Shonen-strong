@@ -21,10 +21,10 @@ Animechars.init(
       allowNull: false,
       autoIncrement: true
     },
-    workoutid: {
+    recworkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'workout',
+        model: 'rec_workout',
         key: 'id'
       },
     },
@@ -36,4 +36,4 @@ Animechars.init(
   }
 );
 
-module.exports = animechars;
+module.exports = Animechars;

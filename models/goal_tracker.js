@@ -15,10 +15,6 @@ GoalTracker.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    end_date: { // add the time addition
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
     weight: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -31,15 +27,20 @@ GoalTracker.init(
       type:DataTypes.INTEGER,
       allowNull: false,
     },
-    currentWorkout_id: {
-      type: DataTypes.INTEGER,
+    usercurrwork_id: {
+      type: DataTypes.TEXT,
       references: {
-        model: 'workout',
+        model: 'user',
         key: 'id',
       },
     },
-  },
-  {
+    rectracker_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'rec_workout',
+        key: 'id',
+      },
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,

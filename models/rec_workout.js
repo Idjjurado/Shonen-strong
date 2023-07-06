@@ -11,24 +11,10 @@ Rec_workout.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    animechar_id: {
-      type: DataTypes.VARCHAR(30),
+    user_id: {
+      type: DataTypes.TEXT,
       references: {
-        model: 'animechars',
-        key: 'id',
-      },
-    },
-    workoutname_id: {
-      type: DataTypes.VARCHAR(30),
-      references: {
-        model: 'animechars',
-        key: 'id',
-      },
-    },
-    workoutschedule_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'goal_tracker',
+        model: 'user',
         key: 'id'
       }
     },

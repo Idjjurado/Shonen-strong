@@ -19,10 +19,24 @@ Workout.init(
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    workoutdetails: {
-      type: DataTypes.INTEGER,
+    recworkout_id: {
+      type: DataTypes.VARCHAR(30),
       references: {
-        model: 'exercise',
+        model: 'rec_workout',
+        key: 'id',
+      },
+    },
+    Animecharsworkout_id: {
+      type: DataTypes.VARCHAR(30),
+      references: {
+        model: 'animechars',
+        key: 'id',
+      },
+    },
+    goalWork_id: {
+      type: DataTypes.TEXT,
+      references: {
+        model: 'goal_tracker',
         key: 'id',
       },
     },

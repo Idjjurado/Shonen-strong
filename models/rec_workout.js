@@ -5,7 +5,7 @@ class Rec_workout extends Model{}
 
 Rec_workout.init(
   {
-    id: {
+    userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,

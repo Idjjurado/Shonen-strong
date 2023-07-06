@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class exercise extends Model{}
+class Exercise extends Model{}
 
-exercise.init(
+Exercise.init(
   {
     id: {
       type: DataTypes.TEXT,
@@ -24,6 +24,13 @@ exercise.init(
       type: DataTypes.TEXT,
       autoIncrement: true
     },
+    Workout_id: {
+      type: DataTypes.VARCHAR(30),
+      references: {
+        model: 'workout',
+        key: 'id',
+      },
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
@@ -32,4 +39,4 @@ exercise.init(
   }
 );
 
-modeule.exports = exercise;
+module.exports = Exercise;

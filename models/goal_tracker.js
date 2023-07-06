@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class goalTracker extends Model{}
+class GoalTracker extends Model{}
 
-goalTracker.init(
+GoalTracker.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,10 +12,6 @@ goalTracker.init(
       autoIncrement: true,
     },
     start_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    end_date: { // add the time addition
       type: DataTypes.DATE,
       allowNull: false,
     },
@@ -31,15 +27,20 @@ goalTracker.init(
       type:DataTypes.INTEGER,
       allowNull: false,
     },
-    currentWorkout_id: {
-      type: DataTypes.INTEGER,
+    usercurrwork_id: {
+      type: DataTypes.TEXT,
       references: {
-        model: 'workout',
+        model: 'user',
         key: 'id',
       },
     },
-  },
-  {
+    rectracker_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'rec_workout',
+        key: 'id',
+      },
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
@@ -48,4 +49,4 @@ goalTracker.init(
   }
 );
 
-module.exports = goalTracker;
+module.exports = GoalTracker;

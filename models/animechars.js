@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class animechars extends Model{}
+class Animechars extends Model{}
 
-animechars.init(
+Animechars.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -21,10 +21,10 @@ animechars.init(
       allowNull: false,
       autoIncrement: true
     },
-    workoutid: {
+    recworkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'workout',
+        model: 'rec_workout',
         key: 'id'
       },
     },
@@ -36,4 +36,4 @@ animechars.init(
   }
 );
 
-module.exports = animechars;
+module.exports = Animechars;

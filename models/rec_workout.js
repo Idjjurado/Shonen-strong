@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class rec_workout extends Model{}
+class Rec_workout extends Model{}
 
-rec_workout.init(
+Rec_workout.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,24 +11,10 @@ rec_workout.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    animechar_id: {
-      type: DataTypes.VARCHAR(30),
+    user_id: {
+      type: DataTypes.TEXT,
       references: {
-        model: 'animechars',
-        key: 'id',
-      },
-    },
-    workoutname_id: {
-      type: DataTypes.VARCHAR(30),
-      references: {
-        model: 'animechars',
-        key: 'id',
-      },
-    },
-    workoutschedule_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'goal_tracker',
+        model: 'user',
         key: 'id'
       }
     },
@@ -40,4 +26,4 @@ rec_workout.init(
   },
 );
 
-modeule.exports = rec_workout;
+module.exports = Rec_workout;

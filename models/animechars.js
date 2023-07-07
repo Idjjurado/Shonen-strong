@@ -12,14 +12,12 @@ Animechars.init(
       autoIncrement: true,
     },
     charname: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.VARCHAR(40),
       allowNull: false,
-      autoIncrement: true
     },
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
-      autoIncrement: true
     },
     recworkout_id: {
       type: DataTypes.INTEGER,

@@ -23,12 +23,13 @@ Exercises.init(
       type: DataTypes.TEXT,
       autoIncrement: true
     },
-    Workout_id: {
-      type: DataTypes.VARCHAR(30),
-      references: {
-        model: 'workout',
-        key: 'id',
-      },
+    push: {
+      type: DataTypes.TEXT,
+      autoIncrement: true,
+    },
+    pull: {
+      type: DataTypes.TEXT,
+      autoIncrement: true,
     },
     sequelize,
     timestamps: false,

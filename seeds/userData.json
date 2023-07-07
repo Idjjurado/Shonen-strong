@@ -1,22 +1,52 @@
 [
   {
-    "name": "Daniel Pacheco",
+    "id": "1",
+    "nickname": "Son Goku",
+    "lastname": "Pacheco",
+    "firstname": "Daniel",
     "email": "daniel@hotmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "Recommended": "PLACEHOLDER",
+    "CurrentWorkout_id": "1"
   },
   {
-    "name": "Shanna Morris",
-    "email": "shanna@gmail.com",
-    "password": "password12345"
+    "id": "2",
+    "nickname": "Eto Yoshimura",
+    "lastname": "Morris",
+    "firstname": "Shanna",
+    "email": "shanna@hotmail.com",
+    "password": "password12345",
+    "Recommended": "PLACEHOLDER",
+    "CurrentWorkout_id": "2"
   },
   {
-    "name": "Trenton Sallee",
-    "email": "trenton@aol.com",
-    "password": "password12345"
+    "id": "3",
+    "nickname": "Shuu Tsukiyama",
+    "lastname": "Sallee",
+    "firstname": "Trenton",
+    "email": "trenton@hotmail.com",
+    "password": "password12345",
+    "Recommended": "PLACEHOLDER",
+    "CurrentWorkout_id": "3"
   },
   {
-    "name": "Kevin Verduzco",
-    "email": "kevin@aol.com",
-    "password": "password12345"
+    "id": "4",
+    "nickname": "Renji Yomo",
+    "lastname": "Verduzco",
+    "firstname": "Kevin",
+    "email": "Kevin@hotmail.com",
+    "password": "password12345",
+    "Recommended": "PLACEHOLDER",
+    "CurrentWorkout_id": "4"
+  },
+  {
+    "id": "23",
+    "nickname": "OneEyedGhoulKing",
+    "lastname": "Jimenez-Jurado",
+    "firstname": "Ismael",
+    "email": "ismael.david.jimenez@gmail.com",
+    "password": "password12345",
+    "Recommended": "PLACEHOLDER",
+    "CurrentWorkout_id": "5"
   }
 ]

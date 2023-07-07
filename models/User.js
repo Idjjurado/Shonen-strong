@@ -10,15 +10,27 @@ class User extends Model {
 
 User.init(
   {
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    firstname: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    lastname:{
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    nickname:{
+      type: DataTypes.STRING,
+      allowNull: true
     },
     email: {
       type: DataTypes.STRING,
@@ -35,6 +47,20 @@ User.init(
         len: [8],
       },
     },
+    Recommended: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'rec_workout',
+        key: 'id',
+      },
+    },
+    CurrentWorkout_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'goal_tracker',
+        key: 'id',
+      },
+    },
   },
   {
     hooks: {
@@ -43,7 +69,10 @@ User.init(
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
         return updatedUserData;
       },
     },

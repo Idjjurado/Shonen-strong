@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "charname": "Naruto Uzumaki",
+      "description": "Lean and athletic physique with defined muscles and agility.",
+      "workoutid": null
+    },
+    {
+      "id": 2,
+      "charname": "Goku",
+      "description": "Muscular and well-built physique showcasing immense strength and fitness.",
+      "workoutid": null
+    },
+    {
+      "id": 3,
+      "charname": "Monkey D. Luffy",
+      "description": "Slim and agile physique with surprising strength and endurance.",
+      "workoutid": null
+    },
+    {
+      "id": 4,
+      "charname": "Vegeta",
+      "description": "Well-built and muscular physique, displaying exceptional strength and speed.",
+      "workoutid": null
+    },
+    {
+      "id": 5,
+      "charname": "Ichigo Kurosaki",
+      "description": "Lean and athletic physique, utilizing speed and precision in combat.",
+      "workoutid": null
+    },
+    {
+      "id": 6,
+      "charname": "Edward Elric",
+      "description": "Lean and toned physique, enhancing agility and physical strength.",
+      "workoutid": null
+    },
+    {
+      "id": 7,
+      "charname": "Lelouch Lamperouge",
+      "description": "Slim and athletic build, maintaining physical fitness through regular exercise.",
+      "workoutid": null
+    },
+    {
+      "id": 8,
+      "charname": "Mikasa Ackerman",
+      "description": "Well-toned and athletic physique, honed through combat training.",
+      "workoutid": null
+    },
+    {
+      "id": 9,
+      "charname": "Saitama",
+      "description": "Unassuming and ordinary appearance, concealing immeasurable strength and power.",
+      "workoutid": null
+    },
+    {
+      "id": 10,
+      "charname": "Levi Ackerman",
+      "description": "Lean and muscular build, showcasing exceptional combat abilities and physical prowess.",
+      "workoutid": null
+    }
+  ]
+  

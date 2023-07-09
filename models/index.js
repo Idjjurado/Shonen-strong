@@ -1,9 +1,9 @@
 const User = require('./User');
-const Animechars = require('./animechars');
-const Exercise = require('./exercises');
-const Goal_tracker = require('./goal_tracker');
-const Rec_workout = require('./rec_workout');
-const Workout = require('./workout');
+const Animechars = require('./Animechars');
+const Exercise = require('./Exercises');
+const Goal_tracker = require('./Goal_tracker');
+const Rec_workout = require('./Rec_workout');
+const Workout = require('./Workout');
 
 //User Keys
 User.hasMany(Rec_workout, {

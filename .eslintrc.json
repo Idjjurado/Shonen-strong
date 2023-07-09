@@ -5,11 +5,9 @@
       "commonjs": true,
       "node": true,
       "es6": true,
-      // Add support for ES7 features like ** operators
       "es2017": true
     },
     "rules": {
-      // Don't allow assigning variables to undefined
       "no-undef-init": "error",
       "no-duplicate-case": "error",
       "no-empty": "error",

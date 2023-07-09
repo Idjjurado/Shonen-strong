@@ -30,14 +30,14 @@ GoalTracker.init(
     usercurrwork_id: {
       type: DataTypes.TEXT,
       references: {
-        model: 'user',
+        model: 'User',
         key: 'id',
       },
     },
     rectracker_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'rec_workout',
+        model: 'Rec_workout',
         key: 'id',
       },
     },
@@ -45,7 +45,7 @@ GoalTracker.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'goal_tracker',
+    modelName: 'Goal_tracker',
   }
 );
 

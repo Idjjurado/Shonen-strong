@@ -1,43 +1,37 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Exercise extends Model{}
+class Exercises extends Model{}
 
-Exercise.init(
+Exercises.init(
   {
     id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     weights: {
       type: DataTypes.TEXT,
-      autoIncrement: true
     },
     stretching: {
       type: DataTypes.TEXT,
-      autoIncrement: true
     },
     cardio: {
       type: DataTypes.TEXT,
-      autoIncrement: true
     },
     push: {
       type: DataTypes.TEXT,
-      autoIncrement: true,
     },
     pull: {
       type: DataTypes.TEXT,
-      autoIncrement: true,
     },
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'exercise',
+    modelName: 'Exercises',
   }
 );
 
-module.exports = Exercise;
+module.exports = Exercises;

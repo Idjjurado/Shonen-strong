@@ -12,19 +12,17 @@ Animechars.init(
       autoIncrement: true,
     },
     charname: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.STRING,
       allowNull: false,
-      autoIncrement: true
     },
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
-      autoIncrement: true
     },
     recworkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'rec_workout',
+        model: 'Rec_workout',
         key: 'id'
       },
     },
@@ -32,7 +30,7 @@ Animechars.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'animechars',
+    modelName: 'Animechars',
   }
 );
 

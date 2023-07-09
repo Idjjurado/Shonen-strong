@@ -5,7 +5,7 @@ class Rec_workout extends Model{}
 
 Rec_workout.init(
   {
-    userId: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -14,7 +14,7 @@ Rec_workout.init(
     user_id: {
       type: DataTypes.TEXT,
       references: {
-        model: 'user',
+        model: 'User',
         key: 'id'
       }
     },
@@ -22,7 +22,7 @@ Rec_workout.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'rec_workout',
+    modelName: 'Rec_workout',
   },
 );
 

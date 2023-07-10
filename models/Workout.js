@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
 class Workout extends Model{}
 
@@ -12,7 +12,7 @@ Workout.init(
       autoIncrement: true
     },
     workoutname: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.STRING,
       allowNull: false
     },
     difficulty: {
@@ -20,33 +20,34 @@ Workout.init(
       allowNull: false
     },
     recworkout_id: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.INTEGER,
       references: {
         model: 'rec_workout',
         key: 'id',
       },
     },
     Animecharsworkout_id: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.INTEGER,
       references: {
         model: 'animechars',
         key: 'id',
       },
     },
     goalWork_id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
       references: {
-        model: 'goal_tracker',
+        model: 'goaltracker',
         key: 'id',
       },
     },
-    sequelize,
+  },
+  {
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'workout',
-
-  },
+  }
 );
 
 module.exports = Workout;

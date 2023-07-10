@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
-class Animechars extends Model{}
+class Animechars extends Model {}
 
 Animechars.init(
   {
@@ -12,14 +12,12 @@ Animechars.init(
       autoIncrement: true,
     },
     charname: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.STRING,
       allowNull: false,
-      autoIncrement: true
     },
     description: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
-      autoIncrement: true
     },
     recworkout_id: {
       type: DataTypes.INTEGER,
@@ -28,7 +26,9 @@ Animechars.init(
         key: 'id'
       },
     },
-    sequelize,
+  },
+  {
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,

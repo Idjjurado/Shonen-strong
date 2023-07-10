@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -10,15 +10,15 @@ class User extends Model {
 
 User.init(
   {
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
+    },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     firstname: {
       type: DataTypes.STRING,
@@ -44,7 +44,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8],
+        len: [10],
       },
     },
     Recommended: {
@@ -57,7 +57,7 @@ User.init(
     CurrentWorkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'goal_tracker',
+        model: 'goaltracker',
         key: 'id',
       },
     },
@@ -76,7 +76,7 @@ User.init(
         return updatedUserData;
       },
     },
-    sequelize,
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,

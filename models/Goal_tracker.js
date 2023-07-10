@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
 class GoalTracker extends Model{}
 
@@ -28,7 +28,8 @@ GoalTracker.init(
       allowNull: false,
     },
     usercurrwork_id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'user',
         key: 'id',
@@ -41,11 +42,13 @@ GoalTracker.init(
         key: 'id',
       },
     },
-    sequelize,
+  },
+  {
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'goal_tracker',
+    modelName: 'goaltracker',
   }
 );
 

@@ -28,24 +28,27 @@ GoalTracker.init(
       allowNull: false,
     },
     usercurrwork_id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id',
       },
     },
     rectracker_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Rec_workout',
+        model: 'rec_workout',
         key: 'id',
       },
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Goal_tracker',
+    modelName: 'goaltracker',
   }
 );
 

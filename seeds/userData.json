@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "nickname": "Son Goku",
+    "username": "Son Goku",
     "lastname": "Pacheco",
     "firstname": "Daniel",
     "email": "daniel@hotmail.com",
@@ -11,7 +11,7 @@
   },
   {
     "id": "2",
-    "nickname": "Eto Yoshimura",
+    "username": "Eto Yoshimura",
     "lastname": "Morris",
     "firstname": "Shanna",
     "email": "shanna@hotmail.com",
@@ -21,7 +21,7 @@
   },
   {
     "id": "3",
-    "nickname": "Shuu Tsukiyama",
+    "username": "Shuu Tsukiyama",
     "lastname": "Sallee",
     "firstname": "Trenton",
     "email": "trenton@hotmail.com",
@@ -31,7 +31,7 @@
   },
   {
     "id": "4",
-    "nickname": "Renji Yomo",
+    "username": "Renji Yomo",
     "lastname": "Verduzco",
     "firstname": "Kevin",
     "email": "Kevin@hotmail.com",
@@ -41,7 +41,7 @@
   },
   {
     "id": "23",
-    "nickname": "OneEyedGhoulKing",
+    "username": "OneEyedGhoulKing",
     "lastname": "Jimenez-Jurado",
     "firstname": "Ismael",
     "email": "ismael.david.jimenez@gmail.com",

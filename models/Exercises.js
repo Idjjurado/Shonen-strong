@@ -12,25 +12,27 @@ Exercises.init(
       autoIncrement: true,
     },
     weights: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     stretching: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     cardio: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     push: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     pull: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Exercises',
+    modelName: 'exercises',
   }
 );
 

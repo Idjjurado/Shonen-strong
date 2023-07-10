@@ -14,16 +14,18 @@ Rec_workout.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id'
       }
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Rec_workout',
-  },
+    modelName: 'rec_workout',
+  }
 );
 
 module.exports = Rec_workout;

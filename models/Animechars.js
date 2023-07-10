@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
 
-class Animechars extends Model{}
+class Animechars extends Model {}
 
 Animechars.init(
   {
@@ -16,21 +16,23 @@ Animechars.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     recworkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Rec_workout',
+        model: 'rec_workout',
         key: 'id'
       },
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Animechars',
+    modelName: 'animechars',
   }
 );
 

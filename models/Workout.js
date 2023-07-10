@@ -20,33 +20,34 @@ Workout.init(
       allowNull: false
     },
     recworkout_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
-        model: 'Rec_workout',
+        model: 'rec_workout',
         key: 'id',
       },
     },
     Animecharsworkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Animechars',
+        model: 'animechars',
         key: 'id',
       },
     },
     goalWork_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Goal_tracker',
+        model: 'goaltracker',
         key: 'id',
       },
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Workout',
-
-  },
+    modelName: 'workout',
+  }
 );
 
 module.exports = Workout;

@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
 class Exercises extends Model{}
 
@@ -26,7 +26,7 @@ Exercises.init(
     pull: {
       type: DataTypes.TEXT,
     },
-    sequelize,
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,

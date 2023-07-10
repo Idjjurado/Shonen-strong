@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
 class Rec_workout extends Model{}
 
@@ -18,7 +18,7 @@ Rec_workout.init(
         key: 'id'
       }
     },
-    sequelize,
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,

@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const connection = require('../config/connection');
 
 class Rec_workout extends Model{}
 
@@ -12,13 +12,13 @@ Rec_workout.init(
       autoIncrement: true,
     },
     user_id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
       references: {
         model: 'User',
         key: 'id'
       }
     },
-    sequelize,
+    sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,

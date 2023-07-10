@@ -6,7 +6,7 @@
     "firstname": "Daniel",
     "email": "daniel@hotmail.com",
     "password": "password12345",
-    "Recommended": "PLACEHOLDER",
+    "Recommended": "5",
     "CurrentWorkout_id": "1"
   },
   {
@@ -16,7 +16,7 @@
     "firstname": "Shanna",
     "email": "shanna@hotmail.com",
     "password": "password12345",
-    "Recommended": "PLACEHOLDER",
+    "Recommended": "4",
     "CurrentWorkout_id": "2"
   },
   {
@@ -26,7 +26,7 @@
     "firstname": "Trenton",
     "email": "trenton@hotmail.com",
     "password": "password12345",
-    "Recommended": "PLACEHOLDER",
+    "Recommended": "3",
     "CurrentWorkout_id": "3"
   },
   {
@@ -36,7 +36,7 @@
     "firstname": "Kevin",
     "email": "Kevin@hotmail.com",
     "password": "password12345",
-    "Recommended": "PLACEHOLDER",
+    "Recommended": "2",
     "CurrentWorkout_id": "4"
   },
   {
@@ -46,7 +46,7 @@
     "firstname": "Ismael",
     "email": "ismael.david.jimenez@gmail.com",
     "password": "password12345",
-    "Recommended": "PLACEHOLDER",
+    "Recommended": "1",
     "CurrentWorkout_id": "5"
   }
 ]

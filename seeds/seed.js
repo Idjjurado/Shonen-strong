@@ -12,14 +12,14 @@ const workoutsData = require('./workouts.json');
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
+  await Rec_workout.bulkCreate(recworkoutData);
   await User.bulkCreate(userData, { individualHooks: true });
   await Animechars.bulkCreate(animecharsData);
   await Exercises.bulkCreate(exercisesData);
   await Goal_tracker.bulkCreate(goaltrackerData);
-  await Rec_workout.bulkCreate(recworkoutData);
   await Workout.bulkCreate(workoutsData);
 
-
+  console.log('allseeded');
 
   process.exit(0);
 };

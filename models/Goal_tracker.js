@@ -37,15 +37,17 @@ GoalTracker.init(
     rectracker_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Rec_workout',
+        model: 'rec_workout',
         key: 'id',
       },
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Goal_tracker',
+    modelName: 'animechars',
   }
 );
 

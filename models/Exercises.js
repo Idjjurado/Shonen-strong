@@ -26,11 +26,13 @@ Exercises.init(
     pull: {
       type: DataTypes.TEXT,
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Exercises',
+    modelName: 'animechars',
   }
 );
 

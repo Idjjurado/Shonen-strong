@@ -22,31 +22,32 @@ Workout.init(
     recworkout_id: {
       type: DataTypes.STRING,
       references: {
-        model: 'Rec_workout',
+        model: 'rec_workout',
         key: 'id',
       },
     },
     Animecharsworkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Animechars',
+        model: 'animechars',
         key: 'id',
       },
     },
     goalWork_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'Goal_tracker',
+        model: 'goal_tracker',
         key: 'id',
       },
     },
+  },
+  {
     sequelize: connection,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Workout',
-
-  },
+    modelName: 'animechars',
+  }
 );
 
 module.exports = Workout;

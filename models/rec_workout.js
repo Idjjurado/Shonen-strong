@@ -12,7 +12,7 @@ Rec_workout.init(
       autoIncrement: true,
     },
     user_id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
       references: {
         model: 'User',
         key: 'id'

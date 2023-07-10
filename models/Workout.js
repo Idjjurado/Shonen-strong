@@ -20,7 +20,7 @@ Workout.init(
       allowNull: false
     },
     recworkout_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: 'rec_workout',
         key: 'id',
@@ -36,7 +36,7 @@ Workout.init(
     goalWork_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'goal_tracker',
+        model: 'goaltracker',
         key: 'id',
       },
     },
@@ -46,7 +46,7 @@ Workout.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'animechars',
+    modelName: 'workout',
   }
 );
 

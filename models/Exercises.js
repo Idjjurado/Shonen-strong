@@ -12,19 +12,19 @@ Exercises.init(
       autoIncrement: true,
     },
     weights: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     stretching: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     cardio: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     push: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
     pull: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
     },
   },
   {
@@ -32,7 +32,7 @@ Exercises.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'animechars',
+    modelName: 'exercises',
   }
 );
 

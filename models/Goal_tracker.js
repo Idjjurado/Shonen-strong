@@ -28,9 +28,10 @@ GoalTracker.init(
       allowNull: false,
     },
     usercurrwork_id: {
-      type: DataTypes.TEXT,
+      type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id',
       },
     },
@@ -47,7 +48,7 @@ GoalTracker.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'animechars',
+    modelName: 'goaltracker',
   }
 );
 

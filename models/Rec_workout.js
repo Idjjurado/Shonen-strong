@@ -24,7 +24,7 @@ Rec_workout.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'animechars',
+    modelName: 'rec_workout',
   }
 );
 

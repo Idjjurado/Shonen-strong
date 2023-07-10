@@ -1,7 +1,7 @@
 const User = require('./User');
 const Animechars = require('./Animechars');
 const Exercises = require('./Exercises');
-const Goal_tracker = require('./Goal_tracker');
+const Goaltracker = require('./Goal_tracker');
 const Rec_workout = require('./Rec_workout');
 const Workout = require('./Workout');
 
@@ -14,11 +14,11 @@ Rec_workout.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-User.hasOne(Goal_tracker, {
+User.hasOne(Goaltracker, {
   foreignKey: 'usercurrwork_id',
 });
 
-Goal_tracker.belongsTo(User, {
+Goaltracker.belongsTo(User, {
   foreignKey: 'usercurrwork_id',
 });
 
@@ -40,11 +40,11 @@ Workout.belongsTo(Rec_workout, {
   foreignKey: 'recworkout_id',
 });
 
-Rec_workout.hasMany(Goal_tracker, {
+Rec_workout.hasMany(Goaltracker, {
   foreignKey: 'rectracker_id',
 });
 
-Goal_tracker.belongsTo(Rec_workout, {
+Goaltracker.belongsTo(Rec_workout, {
   foreignKey: 'rectracker_id',
 });
 
@@ -61,12 +61,12 @@ Workout.belongsTo(Animechars, {
 
 
 
-//Goal_tracker Keys
-Goal_tracker.hasOne(Workout, {
+//Goaltracker Keys
+Goaltracker.hasOne(Workout, {
   foreignKey: 'goalWork_id',
 });
 
-Workout.belongsTo(Goal_tracker, {
+Workout.belongsTo(Goaltracker, {
   foreignKey: 'goalWork_id',
 });
 
@@ -81,4 +81,4 @@ Exercises.belongsTo(Workout, {
 });
 
 
-module.exports = { User, Animechars, Exercises, Goal_tracker, Rec_workout, Workout};
+module.exports = { User, Animechars, Exercises, Goaltracker, Rec_workout, Workout};

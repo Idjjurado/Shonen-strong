@@ -44,7 +44,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8],
+        len: [10],
       },
     },
     Recommended: {
@@ -57,7 +57,7 @@ User.init(
     CurrentWorkout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'goal_tracker',
+        model: 'goaltracker',
         key: 'id',
       },
     },

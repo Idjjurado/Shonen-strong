@@ -21,219 +21,199 @@
               <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-900" -->
               <button id="tabs-1-tab-1" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-1" role="tab" type="button">Weights</button>
               <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-900" -->
-              <button id="tabs-1-tab-2" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-2" role="tab" type="button">Stretching</button>
-              <button id="tabs-1-tab-3" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-3" role="tab" type="button">Cardio</button>
-              <button id="tabs-1-tab-4" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-4" role="tab" type="button">Push</button>
-              <button id="tabs-1-tab-5" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-5" role="tab" type="button">Pull</button>
-              <button id="tabs-1-tab-6" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-6" role="tab" type="button">All Workouts</button>
+              <button id="tabs-1-tab-2" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-2" role="tab" type="button">Cardio</button>
+              <button id="tabs-1-tab-3" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-3" role="tab" type="button">All Workouts</button>
             </div>
           </div>
 
-          <!-- 'Women' tab panel, show/hide based on tab state. -->
+          <!-- 'Weights' tab panel, show/hide based on tab state. -->
           <div id="tabs-1-panel-1" class="space-y-10 px-4 pb-8 pt-10" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
             <div class="grid grid-cols-2 gap-x-4">
               <div class="group relative text-sm">
                 <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                  <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="object-cover object-center">
+                  <img src="../public/imgs/goku.png" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="object-cover object-center">
                 </div>
                 <a href="#" class="mt-6 block font-medium text-gray-900">
                   <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-                  New Arrivals
+                  Lift like
                 </a>
-                <p aria-hidden="true" class="mt-1">Shop now</p>
+                <p aria-hidden="true" class="mt-1">Goku</p>
               </div>
               <div class="group relative text-sm">
                 <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                  <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="object-cover object-center">
+                  <img src="../public/imgs/allhashiras.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="object-cover object-center">
                 </div>
                 <a href="#" class="mt-6 block font-medium text-gray-900">
                   <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-                  Basic Tees
+                  Hunky like a 
                 </a>
-                <p aria-hidden="true" class="mt-1">Shop now</p>
+                <p aria-hidden="true" class="mt-1">Hashira</p>
               </div>
             </div>
             <div>
-              <p id="women-clothing-heading-mobile" class="font-medium text-gray-900">Clothing</p>
+              <p id="women-clothing-heading-mobile" class="font-medium text-gray-900">Apprentice Level </p>
               <ul role="list" aria-labelledby="women-clothing-heading-mobile" class="mt-6 flex flex-col space-y-6">
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Tops</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Dresses</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Pants</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Denim</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Sweaters</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">T-Shirts</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Jackets</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Activewear</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Browse All</a>
-                </li>
+              {{#each exercises}}
+              {{#each workouts}}
+                {{#if exercises.wieghts != null}}
+                {{#if workouts.difficulty == 1}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+                {{/if}}
+                {{/if}}
+               {{/each}}
+               {{/each}}
               </ul>
             </div>
             <div>
-              <p id="women-accessories-heading-mobile" class="font-medium text-gray-900">Accessories</p>
+              <p id="women-accessories-heading-mobile" class="font-medium text-gray-900">MiniBoss</p>
               <ul role="list" aria-labelledby="women-accessories-heading-mobile" class="mt-6 flex flex-col space-y-6">
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Watches</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Wallets</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Bags</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Sunglasses</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Hats</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Belts</a>
-                </li>
+              {{#each exercises}}
+              {{#each workouts}}
+                {{#if exercises.wieghts != null}}
+                {{#if workouts.difficulty == 2}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+                {{/if}}
+                {{/if}}
+               {{/each}}
+               {{/each}}
               </ul>
             </div>
             <div>
-              <p id="women-brands-heading-mobile" class="font-medium text-gray-900">Brands</p>
+              <p id="women-brands-heading-mobile" class="font-medium text-gray-900">Shonen Strong</p>
               <ul role="list" aria-labelledby="women-brands-heading-mobile" class="mt-6 flex flex-col space-y-6">
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Full Nelson</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">My Way</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Re-Arranged</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Counterfeit</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Significant Other</a>
-                </li>
+                {{#each exercises}}
+              {{#each workouts}}
+                {{#if exercises.wieghts != null}}
+                {{#if workouts.difficulty == 3}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+                {{/if}}
+                {{/if}}
+               {{/each}}
+               {{/each}}
               </ul>
             </div>
           </div>
-          <!-- 'Men' tab panel, show/hide based on tab state. -->
+          <!-- 'Cardio' tab panel, show/hide based on tab state. -->
           <div id="tabs-1-panel-2" class="space-y-10 px-4 pb-8 pt-10" aria-labelledby="tabs-1-tab-2" role="tabpanel" tabindex="0">
             <div class="grid grid-cols-2 gap-x-4">
               <div class="group relative text-sm">
                 <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                  <img src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg" alt="Drawstring top with elastic loop closure and textured interior padding." class="object-cover object-center">
+                  <img src="../public/imgs/login-bg.jpg" alt="Drawstring top with elastic loop closure and textured interior padding." class="object-cover object-center">
                 </div>
                 <a href="#" class="mt-6 block font-medium text-gray-900">
                   <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-                  New Arrivals
+                  Loose like
                 </a>
-                <p aria-hidden="true" class="mt-1">Shop now</p>
+                <p aria-hidden="true" class="mt-1">Luffy</p>
               </div>
               <div class="group relative text-sm">
                 <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg" alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt." class="object-cover object-center">
+                  <img src="../public/imgs/animegym.jpg" alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt." class="object-cover object-center">
                 </div>
                 <a href="#" class="mt-6 block font-medium text-gray-900">
                   <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-                  Artwork Tees
+                  How do you
                 </a>
-                <p aria-hidden="true" class="mt-1">Shop now</p>
+                <p aria-hidden="true" class="mt-1">cardio</p>
               </div>
             </div>
             <div>
-              <p id="men-clothing-heading-mobile" class="font-medium text-gray-900">Clothing</p>
+              <p id="men-clothing-heading-mobile" class="font-medium text-gray-900">Apprentice level</p>
               <ul role="list" aria-labelledby="men-clothing-heading-mobile" class="mt-6 flex flex-col space-y-6">
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Tops</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Pants</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Sweaters</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">T-Shirts</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Jackets</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Activewear</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Browse All</a>
-                </li>
+              {{#each exercises}}
+              {{#each workouts}}
+                {{#if exercises.cardio != null}}
+                {{#if workouts.difficulty == 1}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+                {{/if}}
+                {{/if}}
+               {{/each}}
+               {{/each}}
+              </ul>
               </ul>
             </div>
             <div>
-              <p id="men-accessories-heading-mobile" class="font-medium text-gray-900">Accessories</p>
+              <p id="men-accessories-heading-mobile" class="font-medium text-gray-900">MiniBoss</p>
               <ul role="list" aria-labelledby="men-accessories-heading-mobile" class="mt-6 flex flex-col space-y-6">
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Watches</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Wallets</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Bags</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Sunglasses</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Hats</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Belts</a>
-                </li>
+               {{#each exercises}}
+              {{#each workouts}}
+                {{#if exercises.cardio != null}}
+                {{#if workouts.difficulty == 2}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+                {{/if}}
+                {{/if}}
+               {{/each}}
+               {{/each}}
               </ul>
             </div>
             <div>
-              <p id="men-brands-heading-mobile" class="font-medium text-gray-900">Brands</p>
+              <p id="men-brands-heading-mobile" class="font-medium text-gray-900">Shonen Strong</p>
               <ul role="list" aria-labelledby="men-brands-heading-mobile" class="mt-6 flex flex-col space-y-6">
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Re-Arranged</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Counterfeit</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">Full Nelson</a>
-                </li>
-                <li class="flow-root">
-                  <a href="#" class="-m-2 block p-2 text-gray-500">My Way</a>
-                </li>
+              {{#each exercises}}
+              {{#each workouts}}
+                {{#if exercises.cardio != null}}
+                {{#if workouts.difficulty == 3}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+                {{/if}}
+                {{/if}}
+               {{/each}}
+               {{/each}}
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="space-y-6 border-t border-gray-200 px-4 py-6">
-          <div class="flow-root">
-            <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Company</a>
-          </div>
-          <div class="flow-root">
-            <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Stores</a>
-          </div>
-        </div>
+               <!-- 'All Workouts' tab panel, show/hide based on tab state. -->
+           <div id="tabs-1-panel-3" class="space-y-10 px-4 pb-8 pt-10" aria-labelledby="tabs-1-tab-3" role="tabpane3" tabindex="0">
+            <div class="grid grid-cols-2 gap-x-4">
+              <div class="group relative text-sm">
+                <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                  <img src="../public/imgs/anteikucoffee.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="object-cover object-center">
+                </div>
+                <a href="#" class="mt-6 block font-medium text-gray-900">
+                  <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                  Whats your
+                </a>
+                <p aria-hidden="true" class="mt-1">Ghoul?</p>
+              </div>
+              <div class="group relative text-sm">
+                <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                  <img src="../public/imgs/login-bg.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="object-cover object-center">
+                </div>
+                <a href="#" class="mt-6 block font-medium text-gray-900">
+                  <span class="absolute inset-0 z-10" aria-hidden="true"></span>
+                   Whats your
+                </a>
+                <p aria-hidden="true" class="mt-1">Ninja Way?</p>
+              </div>
+            </div>
+            <div>
+              <p id="women-clothing-heading-mobile" class="font-medium text-gray-900">Worlds your Oyster </p>
+              <ul role="list" aria-labelledby="women-clothing-heading-mobile" class="mt-6 flex flex-col space-y-6">
+              {{#each workouts}}
+                  <li class="flow-root">
+                    <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
+                  </li>
+               {{/each}}
+              </ul>
+            </div>
 
+        <!--Top Right Clicks--> <!--
         <div class="space-y-6 border-t border-gray-200 px-4 py-6">
           <div class="flow-root">
-            <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
+            <a href="" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
           </div>
           <div class="flow-root">
             <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Create account</a>
@@ -252,11 +232,11 @@
   </div>
 
   <header class="relative bg-white">
-    <p class="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">Get free delivery on orders over $100</p>
+    <p class="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">Always strive to attain Manga Muscles</p>
 
     <nav aria-label="Top" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="border-b border-gray-200">
-        <div class="flex h-16 items-center">
+        <div class="flex h-16 items-center">-->
           <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
           <button type="button" class="rounded-md bg-white p-2 text-gray-400 lg:hidden">
             <span class="sr-only">Open menu</span>
@@ -268,7 +248,7 @@
           <!-- Logo -->
           <div class="ml-4 flex lg:ml-0">
             <a href="#">
-              <span class="sr-only">Your Company</span>
+              <span class="sr-only">Shonen Strong</span>
               <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
             </a>
           </div>
@@ -279,7 +259,7 @@
               <div class="flex">
                 <div class="relative flex">
                   <!-- Item active: "border-indigo-600 text-indigo-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
-                  <button type="button" class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out" aria-expanded="false">Women</button>
+                  <button type="button" class="border-transparent text-gray-700 hover:text-gray-800 relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out" aria-expanded="false">Weights</button>
                 </div>
 
                 <!--

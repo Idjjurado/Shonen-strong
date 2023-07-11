@@ -47,20 +47,6 @@ User.init(
         len: [10],
       },
     },
-    Recommended: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'rec_workout',
-        key: 'id',
-      },
-    },
-    CurrentWorkout_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'goaltracker',
-        key: 'id',
-      },
-    },
   },
   {
     hooks: {

@@ -18,7 +18,6 @@ const seedDatabase = async () => {
   await User.bulkCreate(userData, { individualHooks: true });
   await Animechars.bulkCreate(animecharsData);
   await Exercises.bulkCreate(exercisesData);
-  await Goal_tracker.bulkCreate(goaltrackerData);
   await Workout.bulkCreate(workoutsData);
 
 

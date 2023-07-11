@@ -13,11 +13,12 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
   console.log('allseeded');
-
+  await Exercises.bulkCreate(exercisesData);
+  
   await User.bulkCreate(userData, { individualHooks: true });
   await Rec_workout.bulkCreate(recworkoutData);
   await Animechars.bulkCreate(animecharsData);
-  await Exercises.bulkCreate(exercisesData);
+ 
   await Goal_tracker.bulkCreate(goaltrackerData);
   await Workout.bulkCreate(workoutsData);
 

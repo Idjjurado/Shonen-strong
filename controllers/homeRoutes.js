@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Project, User, Workout, Exercises } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -22,6 +22,24 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/workoutList', async (req, res) => {
+  try {
+    const workoutList = await Workout.findAll()  ;
+    console.log(workoutList);
+    const workouts =  workoutList.map(workout => workout.get({plain: true }));
+    const exercisesList =await Exercises.findAll();
+    const exercises = await exercisesList.map(exercise=> exercise.get({plain:true}));
+    res.render('workoutList', {
+      workouts,
+      exercises,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

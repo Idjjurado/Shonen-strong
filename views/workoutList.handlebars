@@ -55,8 +55,8 @@
               <ul role="list" aria-labelledby="women-clothing-heading-mobile" class="mt-6 flex flex-col space-y-6">
               {{#each exercises}}
               {{#each workouts}}
-                {{#if exercises.wieghts != null}}
-                {{#if workouts.difficulty == 1}}
+                {{#if exercises.wieghts}}
+                {{#if workouts.difficulty}}
                   <li class="flow-root">
                     <a href="/{{exercise.id}}" class="-m-2 block p-2 text-gray-500">{{workouts.workoutname}}</a>
                   </li>

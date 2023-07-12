@@ -2,6 +2,16 @@
     width: 30%;
 }
 
+.sharingan {
+    width: 30%;
+    justify-content: left;
+}
+
+.icon {
+    width: 10%;
+    justify-content: left;
+}
+
 .login-bg {
     background-image: url(../imgs/login-bg.jpg);
     background-size: cover;
@@ -9,5 +19,6 @@
 
 .bg-all-warriors {
     background-image: url(../imgs/allwarriors.jpg);
-    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
 }

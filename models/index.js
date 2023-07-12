@@ -6,21 +6,7 @@ const Rec_workout = require('./Rec_workout');
 const Workout = require('./Workout');
 
 //User Keys
-User.hasMany(Rec_workout, {
-  foreignKey: 'user_id',
-});
 
-Rec_workout.belongsTo(User, {
-  foreignKey: 'user_id',
-});
-
-User.hasOne(Goaltracker, {
-  foreignKey: 'usercurrwork_id',
-});
-
-Goaltracker.belongsTo(User, {
-  foreignKey: 'usercurrwork_id',
-});
 
 
 //Rec_workout Keys

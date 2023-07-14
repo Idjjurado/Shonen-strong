@@ -2,211 +2,211 @@
   {
     "id": 1,
     "weights": "Chest and triceps exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 2,
     "weights": "Chest exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 3,
     "weights": "Shoulder exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 4,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Triceps exercise"
   },
   {
     "id": 5,
     "weights": "Chest exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 6,
     "weights": "Shoulder exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 7,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Chest exercise"
   },
   {
     "id": 8,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Chest exercise"
   },
   {
     "id": 9,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Triceps exercise"
   },
   {
     "id": 10,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Chest exercise"
   },
   {
     "id": 11,
     "weights": "Back and biceps exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 12,
     "weights": "Back exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 13,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Back exercise"
   },
   {
     "id": 14,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Back exercise"
   },
   {
     "id": 15,
     "weights": "Back exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 16,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Back exercise"
   },
   {
     "id": 17,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Back exercise"
   },
   {
     "id": 18,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Bicep exercise"
   },
   {
     "id": 19,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Bicep exercise"
   },
   {
     "id": 20,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Shoulder exercise"
   },
   {
     "id": 21,
     "weights": "Leg exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 22,
     "weights": "Leg exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 23,
     "weights": "Leg exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 24,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Leg exercise"
   },
   {
     "id": 25,
     "weights": "Leg exercise",
-    "stretching": null,
-    "cardio": null
+    "stretching": 0,
+    "cardio": 0
   },
   {
     "id": 26,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Leg exercise"
   },
   {
     "id": 27,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Leg exercise"
   },
   {
     "id": 28,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Leg exercise"
   },
   {
     "id": 29,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Leg exercise"
   },
   {
     "id": 30,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "Leg exercise"
   },
   {
     "id": 31,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "cardio"
   },
   {
     "id": 32,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "cardio"
   },
   {
     "id": 33,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "cardio"
   },
   {
     "id": 34,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "cardio"
   },
   {
     "id": 35,
-    "weights": null,
-    "stretching": null,
+    "weights": 0,
+    "stretching": 0,
     "cardio": "cardio"
   }
 ]

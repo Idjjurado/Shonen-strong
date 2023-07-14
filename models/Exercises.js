@@ -26,6 +26,13 @@ Exercises.init(
     pull: {
       type: DataTypes.STRING,
     },
+    workout_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'workout',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize: connection,

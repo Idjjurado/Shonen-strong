@@ -12,7 +12,7 @@ router.get('/legs', async (req, res) => {
   res.render('workoutPage', { name: data, workouts: legWorkouts });
 });
 
-
+router.get('/ChestWorkouts')
 
 
 router.get('/difficulty', async (req, res) => {

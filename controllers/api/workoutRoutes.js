@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Workout } = require('../../models');
-const Exercise = require('../../models/exercises');
 
 // all of these routes are prefixed with '/api/workouts'
 

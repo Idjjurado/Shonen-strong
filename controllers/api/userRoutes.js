@@ -76,7 +76,7 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-// Route that populates single user with recommended workouts
+// Route that populates all users
 router.get('/:userId', async (req, res) => {
   try {
     const user = await User.findByPk(req.params.userId, {
@@ -86,9 +86,8 @@ router.get('/:userId', async (req, res) => {
           // Using plain SQL to get user information with all recommended workouts
           [
             sequelize.literal(
-              '(SELECT (*) FROM rec_workout WHERE rec_workout.userId = user.id)'
+              '(SELECT (*) FROM user;)'
             ),
-            'userRecWorkouts',
           ],
         ],
       },

@@ -30,12 +30,17 @@ An inclusive and fun way to enjoy something we all love to have fun with! Anime 
 - [Project requirements](#project-requirements)
 
 # HOME PAGE!
+![HOME PAGE](./public/imgs/homepageclip.png "Shonen Strong home page")
 
+# LOGIN PAGE!
+![LOGIN PAGE](./public/imgs/loginpageclip.png "Shonen Strong login page")
 
-# OTHER PAGE!
+# SIGNUP PAGE!
+![SIGNUP PAGE](./public/imgs/signupclip.png "Shonen Strong signup page")
 
+# WORKOUT PAGE!
+![WORKOUT PAGE](./public/imgs/workoutclip.png "Shonen Strong lworkout page")
 
-# OTHER OTHER PAGE!
 
 ## Technologies used!
 We ended up using quite a few different things!

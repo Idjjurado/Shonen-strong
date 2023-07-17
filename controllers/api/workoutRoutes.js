@@ -9,10 +9,10 @@ router.get('/legs', async (req, res) => {
   // we know we want to query out DB for all LEG WORKOUTS
   const legWorkouts = await Workout.find({ where: { workoutname: 'legs'} });
   // IF we need we can filter/add/remove data from the database query BEFORE we send the data along with the VIEW
-  res.render('workoutPage', { name: data, workouts: legWorkouts });
+  res.render('workoutPage', { name: data, workouts: legWorkouts});
 });
 
-
+router.get('/ChestWorkouts')
 
 
 router.get('/difficulty', async (req, res) => {
@@ -21,11 +21,11 @@ router.get('/difficulty', async (req, res) => {
 });
 
 
-router.get('/legs', async (req, res) => {
+router.get('/Squats', async (req, res) => {
   // we know we want to query out DB for all LEG WORKOUTS
-  const legWorkouts = await Workout.find({ where: { workoutname: ''} }); // let's assume this returns an ARRAY
+  const legWorkouts = await Workout.find({ where: { workoutname: 'Squats'} }); // let's assume this returns an ARRAY
   // IF we need we can filter/add/remove data from the database query BEFORE we send the data along with the VIEW
-  res.render('workoutList', { name: data, workouts: legWorkouts });
+  res.render('workoutList', { name: data, workouts: legWorkouts});
 });
 
 

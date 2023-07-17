@@ -17,7 +17,7 @@ router.get('/legs', async (req, res) => {
 
 router.get('/difficulty', async (req, res) => {
   const legWorkouts = await Workout.find({ where: { workoutname: 'difficulty'} }); // let's assume this returns an ARRAY
-  res.render('workouList', { name: data, workouts: legWorkouts });
+  res.render('workoutList', { name: data, workouts: legWorkouts });
 });
 
 

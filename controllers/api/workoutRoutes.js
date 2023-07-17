@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Workout = require('../../models/workout');
+const { Workout } = require('../../models');
 const Exercise = require('../../models/exercises');
 
 // all of these routes are prefixed with '/api/workouts'
@@ -7,27 +7,26 @@ const Exercise = require('../../models/exercises');
 //These will populate the workout page
 router.get('/legs', async (req, res) => {
   // we know we want to query out DB for all LEG WORKOUTS
-  const legWorkouts = await Workout.find({ where: { workoutname: 'legs'} });
+  const legWorkouts = await Workout.find({ where: { workoutname: 'legs' } });
   // IF we need we can filter/add/remove data from the database query BEFORE we send the data along with the VIEW
-  res.render('workoutPage', { name: data, workouts: legWorkouts});
+  res.render('workoutPage', { name: data, workouts: legWorkouts });
 });
 
-router.get('/ChestWorkouts')
-
+router.get('/ChestWorkouts');
 
 router.get('/difficulty', async (req, res) => {
-  const legWorkouts = await Workout.find({ where: { workoutname: 'difficulty'} }); // let's assume this returns an ARRAY
+  const legWorkouts = await Workout.find({
+    where: { workoutname: 'difficulty' },
+  }); // let's assume this returns an ARRAY
   res.render('workoutList', { name: data, workouts: legWorkouts });
 });
 
-
 router.get('/Squats', async (req, res) => {
   // we know we want to query out DB for all LEG WORKOUTS
-  const legWorkouts = await Workout.find({ where: { workoutname: 'Squats'} }); // let's assume this returns an ARRAY
+  const legWorkouts = await Workout.find({ where: { workoutname: 'Squats' } }); // let's assume this returns an ARRAY
   // IF we need we can filter/add/remove data from the database query BEFORE we send the data along with the VIEW
-  res.render('workoutList', { name: data, workouts: legWorkouts});
+  res.render('workoutList', { name: data, workouts: legWorkouts });
 });
-
 
 /*
 // --> '/api/aquat'

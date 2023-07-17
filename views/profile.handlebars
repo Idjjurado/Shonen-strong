@@ -41,26 +41,28 @@
     </form>
   </div>
 
-
   {{#if workouts.length}}
-  <div class="col-md-6 project-list">
-    <h3>Select your workout:</h3>v 
+    <div class='col-md-6 project-list'>
+      <h3>Select your workout:</h3>v
 
-    {{#each workouts as |pworkout|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{workout.id}}">{{workout.name}}</a></h4>
-          <p>
-      {{workout.anime.image}}
-      </p>
+      {{#each workouts as |pworkout|}}
+        <div class='row mb-2'>
+          <div class='col-md-8'>
+            <h4><a href='/project/{{workout.id}}'>{{workout.name}}</a></h4>
+            <p>
+              {{workout.anime.image}}
+            </p>
 
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{workout.id}}">Select</button>
-      </div>
+          </div>
+          <div class='col-md-4'>
+            <button
+              class='btn btn-sm btn-danger'
+              data-id='{{workout.id}}'
+            >Select</button>
+          </div>
+        </div>
+      {{/each}}
     </div>
-    {{/each}}
-  </div>
   {{/if}}
 </div>
 

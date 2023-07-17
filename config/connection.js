@@ -5,7 +5,7 @@ let sequelize;
 // if in production it will use the connection to jawsdb
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
-// if on local dev it will use localhost and not try to use deployed jawsdb in production
+  // if on local dev it will use localhost and not try to use deployed jawsdb in production
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -20,6 +20,4 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
-
 module.exports = sequelize;
-

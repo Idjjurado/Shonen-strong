@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
 
-class GoalTracker extends Model{}
+class GoalTracker extends Model {}
 
 GoalTracker.init(
   {
@@ -24,7 +24,7 @@ GoalTracker.init(
       allowNull: false,
     },
     reps: {
-      type:DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     usercurrwork_id: {

@@ -1,23 +1,23 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
 
-class Workout extends Model{}
+class Workout extends Model {}
 
 Workout.init(
   {
-    id:{
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     workoutname: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     difficulty: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
     },
     recworkout_id: {
       type: DataTypes.INTEGER,

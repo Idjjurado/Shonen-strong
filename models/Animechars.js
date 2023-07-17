@@ -23,7 +23,7 @@ Animechars.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'rec_workout',
-        key: 'id'
+        key: 'id',
       },
     },
   },

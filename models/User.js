@@ -24,13 +24,13 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lastname:{
+    lastname: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
-    nickname:{
+    nickname: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
     email: {
       type: DataTypes.STRING,

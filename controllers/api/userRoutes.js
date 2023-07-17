@@ -84,11 +84,7 @@ router.get('/:userId', async (req, res) => {
         exclude: ['password'],
         include: [
           // Using plain SQL to get user information with all recommended workouts
-          [
-            sequelize.literal(
-              '(SELECT (*) FROM user;)'
-            ),
-          ],
+          [sequelize.literal('(SELECT (*) FROM user;)')],
         ],
       },
     });
@@ -134,7 +130,9 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 
     if (!userProfile) {
-      return res.status(404).json({ message: 'No user identified, please login or signup!' });
+      return res
+        .status(404)
+        .json({ message: 'No user identified, please login or signup!' });
     }
 
     res.status(200).json(userProfile);

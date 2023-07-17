@@ -1,48 +1,47 @@
 [
-    {
-      "id": "1",
-      "start_date": "7/9/2023",
-      "weight": "110",
-      "height": "65",
-      "reps": "4",
-      "usercurrwork_id": "2",
-      "rectracker_id": "5"
-    },
-    {
-      "id": "2",
-      "start_date": "7/10/2023",
-      "weight": "115",
-      "height": "72",
-      "reps": "8",
-      "usercurrwork_id": "1",
-      "rectracker_id": "4"
-    },
-    {
-      "id": "3",
-      "start_date": "7/11/2023",
-      "weight": "78",
-      "height": "Daniel",
-      "reps": "12",
-      "usercurrwork_id": "4",
-      "rectracker_id": "3"
-    },
-    {
-      "id": "4",
-      "start_date": "7/12/2023",
-      "weight": "125",
-      "height": "84",
-      "reps": "16",
-      "usercurrwork_id": "3",
-      "rectracker_id": "2"
-    },
-    {
-      "id": "5",
-      "start_date": "7/13/2023",
-      "weight": "130",
-      "height": "90",
-      "reps": "20",
-      "usercurrwork_id": "5",
-      "rectracker_id": "1"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "start_date": "7/9/2023",
+    "weight": "110",
+    "height": "65",
+    "reps": "4",
+    "usercurrwork_id": "2",
+    "rectracker_id": "5"
+  },
+  {
+    "id": "2",
+    "start_date": "7/10/2023",
+    "weight": "115",
+    "height": "72",
+    "reps": "8",
+    "usercurrwork_id": "1",
+    "rectracker_id": "4"
+  },
+  {
+    "id": "3",
+    "start_date": "7/11/2023",
+    "weight": "78",
+    "height": "Daniel",
+    "reps": "12",
+    "usercurrwork_id": "4",
+    "rectracker_id": "3"
+  },
+  {
+    "id": "4",
+    "start_date": "7/12/2023",
+    "weight": "125",
+    "height": "84",
+    "reps": "16",
+    "usercurrwork_id": "3",
+    "rectracker_id": "2"
+  },
+  {
+    "id": "5",
+    "start_date": "7/13/2023",
+    "weight": "130",
+    "height": "90",
+    "reps": "20",
+    "usercurrwork_id": "5",
+    "rectracker_id": "1"
+  }
+]

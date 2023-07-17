@@ -14,11 +14,13 @@ router.get('/', async (req, res) => {
 
 router.get('/workoutList', async (req, res) => {
   try {
-    const workoutList = await Workout.findAll()  ;
+    const workoutList = await Workout.findAll();
     console.log(workoutList);
-    const workouts =  workoutList.map(workout => workout.get({plain: true }));
-    const exercisesList =await Exercises.findAll();
-    const exercises = await exercisesList.map(exercise=> exercise.get({plain:true}));
+    const workouts = workoutList.map((workout) => workout.get({ plain: true }));
+    const exercisesList = await Exercises.findAll();
+    const exercises = await exercisesList.map((exercise) =>
+      exercise.get({ plain: true })
+    );
     res.render('workoutList', {
       workouts,
       exercises,
@@ -39,7 +41,6 @@ router.get('/signup', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {

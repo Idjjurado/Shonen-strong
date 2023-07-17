@@ -7,8 +7,6 @@ const Workout = require('./Workout');
 
 //User Keys
 
-
-
 //Rec_workout Keys
 Rec_workout.hasMany(Animechars, {
   foreignKey: 'recworkout_id',
@@ -34,8 +32,6 @@ Goaltracker.belongsTo(Rec_workout, {
   foreignKey: 'rectracker_id',
 });
 
-
-
 //Animechars Keys
 Animechars.hasOne(Workout, {
   foreignKey: 'animecharsworkout_id',
@@ -44,8 +40,6 @@ Animechars.hasOne(Workout, {
 Workout.belongsTo(Animechars, {
   foreignKey: 'animecharsworkout_id',
 });
-
-
 
 //Goaltracker Keys
 Goaltracker.hasOne(Workout, {
@@ -56,7 +50,6 @@ Workout.belongsTo(Goaltracker, {
   foreignKey: 'goalWork_id',
 });
 
-
 //Workout Keys
 Workout.hasMany(Exercises, {
   foreignKey: 'workout_id',
@@ -66,5 +59,11 @@ Exercises.belongsTo(Workout, {
   foreignKey: 'workout_id',
 });
 
-
-module.exports = { User, Animechars, Exercises, Goaltracker, Rec_workout, Workout};
+module.exports = {
+  User,
+  Animechars,
+  Exercises,
+  Goaltracker,
+  Rec_workout,
+  Workout,
+};
